@@ -1,0 +1,23 @@
+html {
+  /* having `scroll-behavior: smooth;` here BRAKES THE CODE! */
+  scroll-behavior: smooth;
+}
+
+
+.wrapper {
+  /* dummy height to simulate further content */
+  height: 200vh;
+}
+
+.container {
+  scroll-behavior: smooth;
+  display: flex;
+  height: 300px;
+  overflow-x: auto;
+}
+
+.container img {
+  /* making images fit nicely in flex-container */
+  max-height: 100%;
+  object-fit: contain;
+}
